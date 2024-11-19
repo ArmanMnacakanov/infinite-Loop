@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+    display: flex;
+    position: relative;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999999;
+    transition: .4s ease;
+    /* background-color: red; */
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    transition: 0.4s;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.logo a:hover {
+    color: #38b;
+}
+
+nav {
+    width: auto;
+}
+
+.nav_links {
+    width: auto;
+    height: auto;
+    /* background-color: red; */
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    list-style: none;
+}
+
+
+.nav_links li {
+    overflow: hidden;
+}
+
+.nav_links a {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    /* background-color: orange; */
+    font-size: 18px;
+    transition: 0.4s;
+    color: white;
+}
+
+.nav_links a:hover {
+    background-color: #38b;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background-image: url(./download.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.bannerinfo {
+    width: auto;
+    height: auto;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    display: flex;
+}
+
+.banner a {
+    background-color: #357;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    width: 80px;
+    padding: 15px 40px;
+    aspect-ratio: 1;
+    transition: 0.4s;
+    transform: translateY(60px);
+}
+
+.banner a:hover {
+    background-color: #38b;
+    scale: 1.2;
+}
+
+.whatwedo h1 {
+    /* color: #357; */
+    color: #38b;
+}
+
+.whatwedo a {
+    color: rgb(40, 66, 91);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.whatwedo a:hover {
+    color: red;
+}
+
+.what_we_do_options {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.what_we_do_option {
+    width: 500px;
+    /* background-color: red; */
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.what_we_do_option i {
+    font-size: 45px;
+    color: #38b;
+}
+
+.what_we_do_options button {
+    background-color: #357;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+}
+
+.what_we_do_options button:hover {
+    background-color: #38b;
+}
+
+.whatwedo:first-child {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 180px;
+}
+
+.whatwedo {
+    width: 100%;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: grey;
+}
+
+.testimonial_container {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    background-image: url(https://www.tooplate.com/templates/2117_infinite_loop/img/infinite-loop-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testimonial {
+    width: 300px;
+    height: auto;
+    color: white;
+    height: auto;
+    gap: 15px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(37, 33, 33); */
+}
+
+.testimonial_box {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.testimonial_box img {
+    border-radius: 50%;
+}
+
+.gallerycontainer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: grey;
+}
+
+.gallerycontainer h1 {
+    color: #38b;
+}
+
+.gallerycontainer p {
+    font-size: 18px;
+    margin: 30px;
+}
+
+.gallery_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.gallerys {
+    width: 300px;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+}
+
+.gallerys div {
+    width: 100%;
+    height: 100%;
+    transform: translateY(-20px);
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    gap: 35px;
+    justify-content: flex-start;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+}
+
+.gallerys img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallerys div:hover {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgba(69, 3, 44, 0.363);
+    border-bottom: 18px solid #38b;
+}
+
+form {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+
+    /* background-color: red; */
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.tooplate.com/templates/2117_infinite_loop/img/infinite-loop-03.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_info {
+    width: 600px;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* background-color: red; */
+}
+
+.footer_info p {
+    text-align: center;
+}
+
+.contact_box form {
+    width: 300px;
+    height: 300px;
+    outline: none;
+    /* background-color: red; */
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+}
+
+.contact_box {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.contact_box input {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    /* background-color: red; */
+    font-size: 15px;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid white;
+    list-style: none;
+    color: white;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    resize: vertical;
+    background: transparent;
+
+}
+
+.contact_box li {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.contact_box button {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    transition: 0.4s;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #357;
+    background-color: #357;
+}
+
+.contact_box button:hover {
+    background-color: #38b;
+    border: 2px solid #38b;
+}
+
+.contact_box a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    display: flex;
+    transition: 0.4s;
+}
+
+.contact_box a:hover {
+    color: #38b;
+}
+
+.contact_links {
+    width: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    display: flex;
+    /* background-color: red; */
+}
+
+.contact_links li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#message {
+    width: 100%;
+    height: 900px;
+    color: white;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    /* background-color: red; */
+}
+
+.menu_btn {
+    font-size: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+    background: transparent;
+}
+
+@media (min-width:1200px) and (max-width:1600px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: fixed;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    .nav_links {
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        display: flex;
+        list-style: none;
+    }
+
+    .gallery_box {
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .menu_btn {
+        display: flex;
+    }
+
+    .nav_links {
+        width: 300px;
+        gap: 15px;
+        background-color: #357;
+        color: white;
+        flex-direction: column;
+    }
+
+    nav {
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        height: 0;
+        top: 100px;
+        transition: .4s ease;
+    }
+
+    .navopen {
+        height: 300px;
+    }
+
+    .gallerys {
+        width: 300px;
+        height: auto;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        /* flex-direction: column; */
+        display: flex;
+    }
+    .banner{
+        width: 100%;
+        aspect-ratio: 16/10;
+        background-image: url(./download.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+
+    .what_we_do_option {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        padding: 30px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:552px) and (max-width:768px) {
+    .menu_btn {
+        display: flex;
+    }
+
+    .nav_links {
+        width: 300px;
+        gap: 15px;
+        overflow: hidden;
+        background-color: #357;
+        color: white;
+        flex-direction: column;
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        top: 100px;
+        transition: .4s ease;
+    }
+
+    .navopen {
+        height: 300px;
+    }
+
+    .gallerys {
+        width: 220px;
+        height: auto;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        /* position: relative; */
+        display: flex;
+    }
+
+    .what_we_do_option {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        padding: 30px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .gallery_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .testimonial_container {
+        width: 100%;
+        height: auto;
+        padding: 100px 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        gap: 30px;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 999999;
+        /* background-color: #357; */
+    }
+    .banner{
+        width: 100%;
+        aspect-ratio: 16/10;
+        background-image: url(./download.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+
+    .testimonial_box img {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .whatwedo {
+        padding: 20px;
+    }
+
+    .testimonial_box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .testimonial p {
+        text-align: center;
+    }
+}
+
+@media(min-width:320px) and (max-width:552px) {
+    .menu_btn {
+        display: flex;
+    }
+
+    .nav_links {
+        width: 100%;
+        gap: 15px;
+        overflow: hidden;
+        background-color: #357;
+        color: white;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        top: 100%;
+        transition: .4s ease;
+    }
+
+    .banner {
+        width: 100%;
+        aspect-ratio: 16/20;
+        background-image: url(./download.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: #357;
+        background-attachment: fixed;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .banner p{
+        text-align: center;
+    }
+
+
+    .navopen {
+        height: 300px;
+    }
+
+    .testimonial_container p {
+        text-align: center;
+    }
+
+    .testimonial p {
+        text-align: center;
+    }
+
+    .what_we_do_option {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        padding: 30px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .whatwedo {
+        padding: 20px;
+    }
+
+    .gallery_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .testimonial_container {
+        width: 100%;
+        height: auto;
+        padding: 100px 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .testimonial_box img {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .testimonial_box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .logo a {
+        text-decoration: none;
+        display: flex;
+        font-size: 20px;
+        transition: 0.4s;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .gallerys {
+        width: 80%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .logo a :hover {
+        color: #38b;
+    }
+
+    .menu_btn {
+        display: flex;
+        color: white;
+    }
+
+    .footer_info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 20px;
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+    }
+}
